@@ -1,0 +1,45 @@
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #3f51b5, #2196f3);
+  font-family: "Poppins", sans-serif;
+}
+
+.clock-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.clock-card:hover {
+  transform: scale(1.05);
+}
+
+.clock-time {
+  font-size: 4rem;
+  color: #3f51b5;
+  margin: 0;
+}
+
+.clock-date {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .clock-card {
+    padding: 25px 40px;
+  }
+  .clock-time {
+    font-size: 2.8rem;
+  }
+  .clock-date {
+    font-size: 1rem;
+  }
+}
